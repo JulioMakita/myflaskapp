@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron">
+
+    <div class="text-center">
+        <h1>Solve Python Pip error</h1>
+    </div>
+
+    <div class="text-left">
+
+        <p class="lead">
+            If you get the following error when try to use a PIP code:
+        </p>
+        <div>
+            Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages'
+            Consider using the `--user` option or check the permissions.
+            <br/>
+            You are using pip version 10.0.1, however version 18.1 is available.
+            You should consider upgrading via the 'pip install --upgrade pip' command.
+        </div>
+        <p class="lead">
+            Use this command: pip install --user tensorflow </br>
+            AND sudo chmod a+w /usr/local/lib/python2.7/dist-packages to give a permission
+        </p>
+         Remove PIP for python2  = sudo apt-get remove python-pip 
+    </div>
+</div>
+{% endblock %}
+
