@@ -9,11 +9,11 @@
 {% endwith %}
 
 {% if msg %}
-  <div class="alert alert-success">{{msg}}</div>
+  <div class="alert alert-success alert-dismissible">{{msg}}</div>
 {% endif %}
 
 {% if error %}
-  <div class="alert alert-danger">{{error}}</div>
+  <div class="alert alert-danger alert-dismissible">{{error}}</div>
 {% endif %}
 
 {% block body %}{% endblock %}
